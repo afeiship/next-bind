@@ -22,8 +22,3 @@ Function.prototype.bind = function(inContext){
   };
 };
 ```
-
-
-
-## todos:
-- [ ] unit test case
