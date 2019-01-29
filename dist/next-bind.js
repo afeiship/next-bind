@@ -4,7 +4,7 @@
   var nx = global.nx || require('next-js-core2');
 
   nx.bind = function (inContext, inArray) {
-    nx.each(inArray, function (_, name) {
+    nx.forEach(inArray, function (name) {
       this[name] = this[name].bind(this);
     }, inContext);
   };
