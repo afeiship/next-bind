@@ -15,7 +15,20 @@ npm install -S @jswork/next-bind
 ```js
 import '@jswork/next-bind';
 
-//DOCS here!
+const obj = {
+  id: 'bold',
+  type: 'plugin',
+  commands: {
+    is: function (inMode) {
+      return this.id === inMode;
+    },
+    get: function () {
+      return this.type;
+    }
+  }
+};
+
+nx.bind(obj, obj.commands);
 ```
 
 ## license
