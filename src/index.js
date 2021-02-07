@@ -11,6 +11,7 @@
         }
       });
     });
+    return inContext;
   };
 
   if (typeof module !== 'undefined' && module.exports) {

@@ -16,10 +16,11 @@
         }
       };
 
-      nx.bind(obj, obj.commands);
+      var target = nx.bind(obj, obj.commands);
       expect(obj.commands.is('bold')).toBe(true);
       expect(obj.commands.is('italic')).toBe(false);
       expect(obj.commands.get()).toBe('plugin');
+      expect(target === obj).toBe(true);
     });
 
     test('multiple object bind', () => {
