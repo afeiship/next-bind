@@ -18,6 +18,11 @@ import '@jswork/next-bind';
 const obj = {
   id: 'bold',
   type: 'plugin',
+  events: {
+    name: function () {
+      return [this.id, this.type].join('-');
+    }
+  },
   commands: {
     is: function (inMode) {
       return this.id === inMode;
@@ -28,7 +33,7 @@ const obj = {
   }
 };
 
-nx.bind(obj, obj.commands);
+nx.bind(obj, obj.commands, obj.events);
 ```
 
 ## license
