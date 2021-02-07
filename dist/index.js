@@ -3,7 +3,7 @@
  * description: Bind all for next.
  * homepage: https://github.com/afeiship/next-bind
  * version: 1.0.0
- * date: 2021-02-07 10:34:27
+ * date: 2021-02-07 10:47:39
  * license: MIT
  */
 
