@@ -2,8 +2,8 @@
  * name: @jswork/next-bind
  * description: Bind all for next.
  * homepage: https://github.com/afeiship/next-bind
- * version: 1.0.1
- * date: 2021-02-07 10:55:58
+ * version: 1.0.2
+ * date: 2021-02-07 11:02:09
  * license: MIT
  */
 
@@ -20,6 +20,7 @@
         }
       });
     });
+    return inContext;
   };
 
   if (typeof module !== 'undefined' && module.exports) {
